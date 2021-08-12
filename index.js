@@ -1,16 +1,12 @@
-const names = ['Lisa', 'Kaitlin', 'Jan'];
-const thankYou = [];
-function writeCards(names, gifts){
-    for(let i=0; i<names.length; i++){
-        thankYou.push(`Thank you, ${names[i]}, for the wonderful ${gifts} gift!`);
-       
+function writeCards(names, surprise){
+    const thankYou = []
+    for(let i = 0; i < names.length; i++){
+        thankYou.push(`Thank you, ${names[i]}, for the wonderful ${surprise} gift!`)
     }
-    return thankYou;
+    return thankYou
 }
-
-function countDown(){
-    let countDown = 10
-    while (countDown >= 0){
-    console.log(countDown --);}
+function countDown(num){
+    while(num >= 0){
+        console.log(num--)
+    }
 }
-
